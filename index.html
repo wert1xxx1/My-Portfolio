@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ru", translate="no">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wert1xxx DEV</title>
+
+    <link rel="shortcut icon" href="./assets/dhruvil-logo-favicon.svg" type="image/svg">
+    <link rel="stylesheet" href="/styles/styles.css">
+    
+</head>
+
+<body>
+
+    <div class="cursor"></div>
+    <div class="cursor2"></div>
+
+    <div class="nav-full-screen" id="navFullScreen">
+        <a href="#home" onclick="closeFullScreenNav()" class="nav-link">HOME</a>
+        <a href="#portfolio" onclick="closeFullScreenNav()" class="nav-link">WORK</a>
+        <a href="#about" onclick="closeFullScreenNav()" class="nav-link">ABOUT</a>
+        <a href="#contact" onclick="closeFullScreenNav()" class="nav-link">CONTACT</a>
+
+        <div class="social-links">
+            <a href="https://www.github.com/" class="social-link">
+                <svg width="1024" height="1024" viewBox="0 0 1024 1024" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8C0 11.54 2.29 14.53 5.47 15.59C5.87 15.66 6.02 15.42 6.02 15.21C6.02 15.02 6.01 14.39 6.01 13.72C4 14.09 3.48 13.23 3.32 12.78C3.23 12.55 2.84 11.84 2.5 11.65C2.22 11.5 1.82 11.13 2.49 11.12C3.12 11.11 3.57 11.7 3.72 11.94C4.44 13.15 5.59 12.81 6.05 12.6C6.12 12.08 6.33 11.73 6.56 11.53C4.78 11.33 2.92 10.64 2.92 7.58C2.92 6.71 3.23 5.99 3.74 5.43C3.66 5.23 3.38 4.41 3.82 3.31C3.82 3.31 4.49 3.1 6.02 4.13C6.66 3.95 7.34 3.86 8.02 3.86C8.7 3.86 9.38 3.95 10.02 4.13C11.55 3.09 12.22 3.31 12.22 3.31C12.66 4.41 12.38 5.23 12.3 5.43C12.81 5.99 13.12 6.7 13.12 7.58C13.12 10.65 11.25 11.33 9.47 11.53C9.76 11.78 10.01 12.26 10.01 13.01C10.01 14.08 10 14.94 10 15.21C10 15.42 10.15 15.67 10.55 15.59C13.71 14.53 16 11.53 16 8C16 3.58 12.42 0 8 0Z" transform="scale(64)"/></svg>
+            </a>
+        </div>
+
+        <button class="close" onclick="closeFullScreenNav()"><img src="./assets/icons/close.svg" alt="close"></button>
+    </div>
+
+    <!-- navbar -->
+    <nav class="navbar">
+        <img class="navbar-logo" src="./assets/icons/avatar.jpg" alt="logo">
+        <div class="nav-links">
+            <a href="#home" class="nav-link nav-link-active" data-key="nav-home">ГЛАВНАЯ</a>
+            <a href="#portfolio" class="nav-link" data-key="nav-portfolio">РАБОТЫ</a>
+            <a href="#about" class="nav-link" data-key="nav-about">ОБО МНЕ</a>
+            <a href="#contact" class="nav-link" data-key="nav-contact">СВЯЗЬ СО МНОЙ</a>
+        </div>
+        <div class="language-switcher">
+            <button onclick="setLanguage('en')">EN</button>
+            <button onclick="setLanguage('ru')">RU</button>
+        </div>
+        <button class="nav-link-btn" onclick="openFullScreenNav()"><img src="./assets/icons/menu.svg"
+                alt="menu"></button>
+    </nav>
+    <!-- navbar -->
+
+
+    <!-- introduction to skills -->
+    <div class="section-hero" id="home">
+        <h1 data-key="intro-paragraph-3">Привет 👋🏻 меня зовут кряша</h1>
+        <h1 data-key="intro-paragraph-4">Я создаю</h1>
+
+        <h1 class="hero-skill-heading t-gradient1" data-text="APPS">APPS</h1>
+        <h1 class="hero-skill-heading t-gradient2" data-text="WEBSITE">WEBSITE</h1>
+        <h1 class="hero-skill-heading t-gradient3" data-text="UI/UX">UI/UX</h1>
+    </div>
+    <!-- introduction to skills -->
+
+
+    <!-- section: technologies -->
+    <div class="section-technologies" id="tech">
+        <div class="section-headings">
+            <h1 data-key="intro-paragraph-5" class="heading-stroke-only">ФРЕЙМВОРКИ</h1>
+            <h1 data-key="intro-paragraph-6">КОТОРЫЕ Я ИСПОЛЬЗУЮ</h1>
+        </div>
+
+        <div class="row">
+            <div class="col"><img class="tech-icon-img" src="./assets/icons/react.svg" alt="img"></div>
+            <div class="col"><img class="tech-icon-img" src="./assets/icons/html.svg" alt="img"></div>
+            <div class="col"><img class="tech-icon-img" src="./assets/icons/css.svg" alt="img"></div>
+            <div class="col"><img class="tech-icon-img" src="./assets/icons/javascript.svg" alt="img"></div>
+            <div class="col"><img class="tech-icon-img" src="./assets/icons/flutter.svg" alt="img"></div>
+            <div class="col"><img class="tech-icon-img" src="./assets/icons/react_native.svg" alt="img"></div>
+            <div class="col"><img class="tech-icon-img" src="./assets/icons/electron.svg" alt="img"></div>
+        </div>
+
+        <div class="row mt-80">
+            <div class="col"><img src="./assets/icons/nextjs.svg" alt="img" class="tech-icon-img"></div>
+            <div class="col"><img src="./assets/icons/nodejs.svg" alt="img" class="tech-icon-img"></div>
+            <div class="col"><img src="./assets/icons/tailwind.svg" alt="img" class="tech-icon-img"></div>
+        </div>
+
+        <div class="row mt-80">
+            <div class="col"><img src="./assets/icons/postgresql.svg" alt="img" class="tech-icon-img"></div>
+            <div class="col"><img src="./assets/icons/mongodb.svg" alt="img" class="tech-icon-img"></div>
+        </div>
+
+        <div class="row mt-80">
+            <div class="col"><img src="./assets/icons/aws.svg" alt="img" class="tech-icon-img"></div>
+            <div class="col"><img src="./assets/icons/googlecloud.svg" alt="img" class="tech-icon-img"></div>
+            <div class="col"><img src="./assets/icons/firebase.svg" alt="img" class="tech-icon-img"></div>
+        </div>
+
+        <div class="row mt-80">
+            <div class="col"><img src="./assets/icons/sketch.svg" alt="img" class="tech-icon-img"></div>
+            <div class="col"><img src="./assets/icons/icons8-roblox-studio.svg" alt="img" class="tech-icon-img"></div>
+            <div class="col"><img src="./assets/icons/figma.svg" alt="img" class="tech-icon-img"></div>
+        </div>
+
+        <div class="row mt-80">
+            <div class="col"><img src="./assets/icons/xd.svg" alt="img" class="tech-icon-img"></div>
+            <div class="col"><img src="./assets/icons/photoshop.svg" alt="img" class="tech-icon-img"></div>
+            <div class="col"><img src="./assets/icons/illustrator.svg" alt="img" class="tech-icon-img"></div>
+            <div class="col"><img src="./assets/icons/premierepro.svg" alt="img" class="tech-icon-img"></div>
+            <div class="col"><img src="./assets/icons/indesign.svg" alt="img" class="tech-icon-img"></div>
+        </div>
+    </div>
+    <!-- section: technologies -->
+
+
+    <!-- section: portfolio -->
+    <div class="section-portfolio" id="portfolio">
+        <div class="section-headings">
+            <h1 data-key="intro-paragraph-7" class="heading-stroke-only">МОИ</h1>
+            <h1 data-key="intro-paragraph-8">РАБОТЫ</h1>
+        </div>
+
+
+        <div class="section-portfolio-grid">
+            <a class="portfolio-card" href="./html-css-projects.html">
+                <img src="assets/projects/projects_app/project.png" alt="img">
+                <div class="portfolio-card-details">
+                    <h4>НУ ТУТ ТИПА ТЕКСТ ДОЛЖЕН БЫТЬ</h4>
+                </div>
+            </a>
+            <a class="portfolio-card" href="https://github.com">
+                <img src="assets/projects/projects_app/project.png" alt="img">
+                <div class="portfolio-card-details">
+                    <h4>НУ ТУТ ТИПА ТЕКСТ ДОЛЖЕН БЫТЬ</h4>
+                </div>
+            </a>
+            <a class="portfolio-card" href="">
+                <img src="assets/projects/projects_app/project.png" alt="img">
+                <div class="portfolio-card-details">
+                    <h4>НУ ТУТ ТИПА ТЕКСТ ДОЛЖЕН БЫТЬ</h4>
+                </div>
+            </a>
+            <a class="portfolio-card" href="https://github.com/">
+                <img src="assets/projects/projects_app/project.png" alt="img">
+                <div class="portfolio-card-details">
+                    <h4>НУ ТУТ ТИПА ТЕКСТ ДОЛЖЕН БЫТЬ</h4>
+                </div>
+            </a>
+        </div>
+    </div>
+    <!-- section: portfolio -->
+
+
+
+    <!-- section:about -->
+    <div class="section-about" id="about">
+        <div class="section-headings">
+            <h1 data-key="intro-paragraph-9" ="heading-stroke-only">ОБО</h1>
+            <h1 data-key="intro-paragraph-10">МНЕ</h1>
+        </div>
+
+        <div class="section-about-details">
+            
+            <div class="section-about-texts">
+                <p data-key="intro-paragraph-1">
+                    Hi there 👋🏻, My name is Wert1xxx, I am a python, lua roblox programmer and also a
+                    web developer.
+                  </p>
+                  <p data-key="intro-paragraph-2">
+                    <br />
+                    Some of my works can be seen below. I will be glad if you write me
+                    about providing services, of course not for free.
+                  </p>
+            </div>
+
+        </div>
+    </div>
+    <!-- section:about -->
+
+
+
+
+    <!-- section: contact -->
+    <div class="section-contact" id="contact">
+        <div class="section-headings">
+            <h1 data-key="intro-paragraph-11" class="heading-stroke-only">Связаться со</h1>
+            <h1 data-key="intro-paragraph-12">МНОЙ</h1>
+        </div>
+
+        <div class="section-contact-links">
+            <a class="contact-link" href="https://discord.com/users/666326926285340710"><img src="./assets/icons/icons8-discord.svg" alt="icon">discord</a>
+            <a class="contact-link" href="https://t.me/Wert1xxx_IT"><img src="./assets/icons/icons8-телеграм.svg" alt="icon">Telegram</a>
+            <a class="contact-link" href="https://yandex.ru/maps/geo/rossiya/53000001/?ll=48.982875%2C58.759924&z=3.47"><img src="./assets/icons/location.svg" alt="icon">
+                Russia</a>
+        </div>
+    </div>
+    <!-- section: contact -->
+
+
+
+    <!-- section: footer -->
+    <footer class="footer">
+        <img src="/assets/icons/avatar.jpg" alt="logo" class="footer-logo">
+        <p>&copy; Copyright by Wert1xxx <span id="currentYear"></span></p>
+        <div class="social-links">
+            <a href="" class="social-link">
+                <svg width="1024" height="1024" viewBox="0 0 1024 1024" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8C0 11.54 2.29 14.53 5.47 15.59C5.87 15.66 6.02 15.42 6.02 15.21C6.02 15.02 6.01 14.39 6.01 13.72C4 14.09 3.48 13.23 3.32 12.78C3.23 12.55 2.84 11.84 2.5 11.65C2.22 11.5 1.82 11.13 2.49 11.12C3.12 11.11 3.57 11.7 3.72 11.94C4.44 13.15 5.59 12.81 6.05 12.6C6.12 12.08 6.33 11.73 6.56 11.53C4.78 11.33 2.92 10.64 2.92 7.58C2.92 6.71 3.23 5.99 3.74 5.43C3.66 5.23 3.38 4.41 3.82 3.31C3.82 3.31 4.49 3.1 6.02 4.13C6.66 3.95 7.34 3.86 8.02 3.86C8.7 3.86 9.38 3.95 10.02 4.13C11.55 3.09 12.22 3.31 12.22 3.31C12.66 4.41 12.38 5.23 12.3 5.43C12.81 5.99 13.12 6.7 13.12 7.58C13.12 10.65 11.25 11.33 9.47 11.53C9.76 11.78 10.01 12.26 10.01 13.01C10.01 14.08 10 14.94 10 15.21C10 15.42 10.15 15.67 10.55 15.59C13.71 14.53 16 11.53 16 8C16 3.58 12.42 0 8 0Z" transform="scale(64)"/></svg>
+            </a>
+        </div>
+    </footer>
+    <!-- section: footer -->
+
+
+    <script src="/scripts/script.js"></script>
+</body>
+
+</html>
